@@ -17,7 +17,8 @@ public final class BrewingConstants {
      * (they always brew at a fixed 3:00), so this plugin adds a custom
      * PotionMix to let Redstone extend them to 8:00 instead.
      */
-    public static final Set<PotionType> EXTENDABLE_TYPES = Set.of(PotionType.WEAVING, PotionType.INFESTED);
+    public static final Set<PotionType> EXTENDABLE_TYPES =
+            Set.of(PotionType.WEAVING, PotionType.INFESTED, PotionType.STRONG_STRENGTH, PotionType.LONG_STRENGTH, PotionType.LONG_SWIFTNESS);
 
     public static final Set<Material> POTION_CONTAINERS =
             Set.of(Material.POTION, Material.SPLASH_POTION, Material.LINGERING_POTION);
