@@ -1,24 +1,24 @@
 {
   "stats": {
     "minecraft:custom": {
-      "minecraft:interact_with_brewingstand": 30,
-      "minecraft:sprint_one_cm": 35,
-      "minecraft:time_since_rest": 50725,
-      "minecraft:walk_one_cm": 596,
-      "minecraft:total_world_time": 50725,
+      "minecraft:interact_with_brewingstand": 49,
+      "minecraft:sprint_one_cm": 89,
+      "minecraft:time_since_rest": 152725,
+      "minecraft:walk_one_cm": 632,
+      "minecraft:total_world_time": 152725,
       "minecraft:leave_game": 2,
       "minecraft:fly_one_cm": 159,
-      "minecraft:play_time": 50725,
-      "minecraft:jump": 2,
-      "minecraft:time_since_death": 50725,
+      "minecraft:play_time": 152725,
+      "minecraft:jump": 4,
+      "minecraft:time_since_death": 152725,
       "minecraft:drop": 9
+    },
+    "minecraft:dropped": {
+      "minecraft:potion": 9
     },
     "minecraft:used": {
       "minecraft:brewing_stand": 1,
       "minecraft:potion": 2
-    },
-    "minecraft:dropped": {
-      "minecraft:potion": 9
     }
   },
   "DataVersion": 4671
