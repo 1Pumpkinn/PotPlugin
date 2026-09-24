@@ -1,0 +1,6 @@
+name: PotPlugin
+version: '${version}'
+
+main: net.rose.potPlugin.Potions01
+api-version: '1.21.11'
+load: POSTWORLD
