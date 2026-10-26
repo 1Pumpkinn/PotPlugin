@@ -1,5 +1,8 @@
 package net.rose.potPlugin;
 
+import net.rose.potPlugin.enchantlimits.EnchantLimits;
+import net.rose.potPlugin.enchantlimits.EnchantLimitsCommand;
+import net.rose.potPlugin.enchantlimits.EnchantLimitsListener;
 import net.rose.potPlugin.listener.BrewingListener;
 import net.rose.potPlugin.potlimits.PotLimitsCommand;
 import net.rose.potPlugin.potlimits.PotLimitsListener;
@@ -27,6 +30,18 @@ public final class Potions01 extends JavaPlugin {
         PluginCommand command = getCommand("potlimits");
         if (command != null) {
             command.setExecutor(new PotLimitsCommand(limits, limitsListener));
+        }
+
+        EnchantLimits enchantLimits = new EnchantLimits(this);
+        enchantLimits.load();
+
+        EnchantLimitsListener enchantListener = new EnchantLimitsListener(this, enchantLimits);
+        getServer().getPluginManager().registerEvents(enchantListener, this);
+        enchantListener.startSweepTask();
+
+        PluginCommand enchantCommand = getCommand("enchantlimits");
+        if (enchantCommand != null) {
+            enchantCommand.setExecutor(new EnchantLimitsCommand(enchantLimits, enchantListener));
         }
     }
 

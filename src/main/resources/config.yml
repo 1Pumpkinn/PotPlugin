@@ -2,3 +2,8 @@
 # dispensers / trial chambers. Manage in-game with /potlimits add|remove|list.
 # Use the potion type key, e.g. strong_strength, long_swiftness, poison.
 banned-potions: []
+
+# Enchantment level caps as "name=maxLevel"; 0 means the enchantment isn't allowed at all.
+# Manage in-game with /enchantlimits set|ban|remove|list. Example: [sharpness=3, mending=0]
+enchant-limits: []
+

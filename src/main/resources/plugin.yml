@@ -10,10 +10,21 @@ commands:
     usage: /<command> <add|remove|list|reload> [potion]
     aliases: [potlimit]
     permission: potplugin.potlimits
+  enchantlimits:
+    description: Cap or ban enchantments
+    usage: /<command> <set|ban|remove|list|reload> [enchant] [maxLevel]
+    aliases: [enchantlimit, enchlimits]
+    permission: potplugin.enchantlimits
 permissions:
   potplugin.potlimits:
     description: Manage the restricted potion list
     default: op
   potplugin.potlimits.bypass:
     description: Ignore all potion restrictions
+    default: op
+  potplugin.enchantlimits:
+    description: Manage enchantment limits
+    default: op
+  potplugin.enchantlimits.bypass:
+    description: Ignore all enchantment limits
     default: op
