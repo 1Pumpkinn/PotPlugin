@@ -4,3 +4,16 @@ author: Admin-Rose
 main: net.rose.potPlugin.Potions01
 api-version: '26.2'
 load: POSTWORLD
+commands:
+  potlimits:
+    description: Restrict which potions can be brewed, held, or applied
+    usage: /<command> <add|remove|list|reload> [potion]
+    aliases: [potlimit]
+    permission: potplugin.potlimits
+permissions:
+  potplugin.potlimits:
+    description: Manage the restricted potion list
+    default: op
+  potplugin.potlimits.bypass:
+    description: Ignore all potion restrictions
+    default: op

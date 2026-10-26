@@ -1,0 +1,4 @@
+# Potion types nobody can brew, hold, drink, or have applied through
+# dispensers / trial chambers. Manage in-game with /potlimits add|remove|list.
+# Use the potion type key, e.g. strong_strength, long_swiftness, poison.
+banned-potions: []

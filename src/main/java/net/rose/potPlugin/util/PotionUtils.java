@@ -105,6 +105,15 @@ public final class PotionUtils {
 
     // ---------------------------------------------------------------------
 
+    /**
+     * The vanilla type this potion started as: the stored origin for potions
+     * this plugin extended (their base type is reset to WATER), otherwise the
+     * normal base type.
+     */
+    public static PotionType originOf(PotionMeta meta) {
+        return originType(meta);
+    }
+
     private static PotionMeta potionMeta(ItemStack item) {
         if (item == null || item.getType() == Material.AIR || !isPotionMaterial(item.getType())) {
             return null;
