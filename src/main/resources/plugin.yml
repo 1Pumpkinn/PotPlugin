@@ -2,5 +2,5 @@ name: PotPlugin
 version: '${version}'
 author: Admin-Rose
 main: net.rose.potPlugin.Potions01
-api-version: '1.21.11'
+api-version: '26.2'
 load: POSTWORLD
